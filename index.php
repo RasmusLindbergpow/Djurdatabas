@@ -19,7 +19,7 @@
 <option value="hund">hund</option>
 <option value="fågel">fågel</option>
 </select>
-<br><br>
+<br>
 <input type="submit" value="submit">
 
 
