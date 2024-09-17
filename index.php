@@ -31,6 +31,7 @@
 
 
 <?php
+require_once("djur.php");
 session_start();
 
 if (isset($_SESSION['djur'])) {
