@@ -16,7 +16,10 @@
 <label for="djur">välj djur</lanel><br>
 <select name="djur" id="villket djur">
 <option value="katt">katt</option>
-
+<option value="hund">hund</option>
+<option value="fågel">fågel</option>
+</select>
+<input type="submit" value="submit">
 
 
 
