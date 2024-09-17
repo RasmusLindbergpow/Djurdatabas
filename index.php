@@ -11,8 +11,8 @@
 <input type="text" id="ljud" name="ljud"></input><br>
 <label for="djurnamn">djurets namn</label><br>
 <input type="text" id="namn" name="namn"></input><br>
-<label for="age">ålder</label><br>
-<input type="text" id="age" name="age"></input><br>
+<label for="ålder">ålder</label><br>
+<input type="text" id="ålder" name="ålder"></input><br>
 <label for="djur">välj djur</lanel><br>
 <select name="djur" id="villket djur">
 <option value="katt">katt</option>
