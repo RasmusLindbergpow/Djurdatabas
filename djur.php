@@ -9,6 +9,10 @@ class Djur {
         $this->sound = $sound;
         $this->age = $age;
     }
+
+    function getDetails() {
+        return "Namn: ".$this->name.", Ljud: ".$this->sound.", Ålder: ".$this->age;
+    }
 }
 
 ?>
