@@ -7,10 +7,10 @@
 </head>
 <body>
     <form action="index.php" method="post">
+  <label for="namn">djurets namn</label><br>
+  <input type="text" id="namn" name="namn"></input><br>
 <label for="ljud">ljud</label><br>
 <input type="text" id="ljud" name="ljud"></input><br>
-<label for="namn">djurets namn</label><br>
-<input type="text" id="namn" name="namn"></input><br>
 <label for="ålder">ålder</label><br>
 <input type="text" id="ålder" name="ålder"></input><br>
 <label for="djur">välj djur</label><br>
