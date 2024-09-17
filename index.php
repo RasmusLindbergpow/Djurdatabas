@@ -22,7 +22,11 @@
 <br>
 <input type="submit" value="submit">
 
+</form>
 
+<form method="post" action="logout.php">
+
+<input type="submit" value="logout">
 
 </form>
     
