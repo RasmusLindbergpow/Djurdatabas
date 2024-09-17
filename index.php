@@ -9,9 +9,9 @@
     <form>
 <label for="ljud">ljud</label><br>
 <input type="text" id="ljud" name="ljud"></input><br>
-<label for="djurnamn">djurens namn</label><br>
+<label for="djurnamn">djurets namn</label><br>
 <input type="text" id="namn" name="djurnamn"></input><br>
-<label for="age">age</label><br>
+<label for="age">ålder</label><br>
 <input type="text" id="age" name="age"></input><br>
 <label for="djur">välj djur</lanel><br>
 <select name="djur" id="villket djur">
