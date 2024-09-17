@@ -6,7 +6,7 @@
     <title>Djur</title>
 </head>
 <body>
-    <form>
+    <form method="post">
 <label for="ljud">ljud</label><br>
 <input type="text" id="ljud" name="ljud"></input><br>
 <label for="djurnamn">djurets namn</label><br>
