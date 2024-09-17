@@ -13,7 +13,7 @@
 <input type="text" id="namn" name="namn"></input><br>
 <label for="ålder">ålder</label><br>
 <input type="text" id="ålder" name="ålder"></input><br>
-<label for="djur">välj djur</lanel><br>
+<label for="djur">välj djur</label><br>
 <select name="djur" id="villketDjur">
 <option value="katt">katt</option>
 <option value="hund">hund</option>
