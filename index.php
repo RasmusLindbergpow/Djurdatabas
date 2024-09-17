@@ -9,12 +9,12 @@
     <form action="index.php" method="post">
 <label for="ljud">ljud</label><br>
 <input type="text" id="ljud" name="ljud"></input><br>
-<label for="djurnamn">djurets namn</label><br>
+<label for="namn">djurets namn</label><br>
 <input type="text" id="namn" name="namn"></input><br>
 <label for="ålder">ålder</label><br>
 <input type="text" id="ålder" name="ålder"></input><br>
 <label for="djur">välj djur</lanel><br>
-<select name="djur" id="villket djur">
+<select name="djur" id="villketDjur">
 <option value="katt">katt</option>
 <option value="hund">hund</option>
 <option value="fågel">fågel</option>
