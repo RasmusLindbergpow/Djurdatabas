@@ -24,3 +24,19 @@
     
 </body>
 </html>
+
+
+<?php
+session_start();
+
+if (isset($_SESSION['djur'])) {
+    foreach ($_SESSION['djur'] as $djurdata) {
+        $djur = unserialize($djurdata);
+        echo $djur->getDetails() . "<br>";
+    }
+}
+
+
+$djur = new Djur($_POST['namn'], $_POST['ljud'], $_POST['ålder']);
+$_SESSION['djur'][] = serialize($djur);
+?>
