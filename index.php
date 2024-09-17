@@ -24,3 +24,10 @@
     
 </body>
 </html>
+
+
+<?php
+session_start();
+$djur = new Djur($_POST['namn'], $_POST['ljud'], $_POST['ålder']);
+$_SESSION['djur'][] = serialize($djur);
+?>
