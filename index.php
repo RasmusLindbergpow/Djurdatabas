@@ -44,12 +44,15 @@
 <?php
 require_once("animal.php");
 require_once("dog.php");
+require_once("cat.php");
 session_start();
 
 if(isset($_POST["name"])){
 
     if($_POST["species"]=="Hund"){
         $djur = new Dog($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
+    }elseif($_POST["species"]=="Katt"){
+        $djur = new Cat($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
     }else{
         $djur = new Animal($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
 
