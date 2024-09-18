@@ -4,14 +4,16 @@ class Djur {
     protected $name;
     protected $sound;
     protected $age;
-    function __construct($name, $sound, $age) {
+    protected $species;
+    function __construct($name, $sound, $age, $species) {
         $this->name = $name;
         $this->sound = $sound;
         $this->age = $age;
+        $this->species = $species;
     }
 
     function getDetails() {
-        return "Namn: ".$this->name.", Ljud: ".$this->sound.", Ålder: ".$this->age;
+        return "Namn: ".$this->name.", Ljud: ".$this->sound.", Ålder: ".$this->age.", Art: ".$this->species;
     }
 }
 
