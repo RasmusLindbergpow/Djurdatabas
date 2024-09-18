@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Djur</title>
 </head>
+
 <body>
     <form action="index.php" method="post">
-  <label for="namn">djurets namn</label><br>
-  <input type="text" id="namn" name="namn"></input><br>
-<label for="ljud">ljud</label><br>
-<input type="text" id="ljud" name="ljud"></input><br>
-<label for="ålder">ålder</label><br>
-<input type="text" id="ålder" name="ålder"></input><br>
-<label for="djur">välj djur</label><br>
-<select name="djur" id="villketDjur">
-<option value="katt">katt</option>
-<option value="hund">hund</option>
-<option value="fågel">fågel</option>
-</select>
-<br>
-<input type="submit" value="submit">
 
-</form>
+        <label for="name">Djurets namn</label><br>
+        <input type="text" id="name" name="name"></input><br>
 
-<form method="post" action="logout.php">
+        <label for="sound">Ljud</label><br>
+        <input type="text" id="sound" name="sound"></input><br>
 
-<input type="submit" value="logout">
+        <label for="age">Ålder</label><br>
+        <input type="text" id="age" name="age"></input><br>
+        
+        <label for="species">Välj djur</label><br>
+        <select name="species" id="species">
+            <option value="cat">Katt</option>
+            <option value="dog">Hund</option>
+            <option value="bird">Fågel</option>
+        </select>
+        <br>
+        <input type="submit" value="submit">
 
-</form>
-    
+    </form>
+
+    <form method="post" action="logout.php">
+
+        <input type="submit" value="logout">
+
+    </form>
+
 </body>
+
 </html>
 
 
 <?php
-require_once("djur.php");
+require_once("animal.php");
 session_start();
 
-$djur = new Djur($_POST['namn'], $_POST['ljud'], $_POST['ålder']);
-$_SESSION['djur'][] = serialize($djur);
+$djur = new Animal($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
+$_SESSION['animal'][] = serialize($djur);
 
-if (isset($_SESSION['djur'])) {
-    foreach ($_SESSION['djur'] as $djurdata) {
+if (isset($_SESSION['animal'])) {
+    foreach ($_SESSION['animal'] as $djurdata) {
         $djur = unserialize($djurdata);
         echo $djur->getDetails() . "<br>";
     }

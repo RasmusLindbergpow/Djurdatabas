@@ -1,6 +1,6 @@
 <?php
 
-class Djur {
+class Animal {
     protected $name;
     protected $sound;
     protected $age;
