@@ -1,0 +1,19 @@
+
+body{
+width: 300px;
+height: 200px;
+background: #f00;
+;
+
+}
+
+input submit{
+
+    background-color: #0f0;
+}
+
+input logout{
+ background-color: #f00;
+
+
+}
