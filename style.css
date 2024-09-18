@@ -3,10 +3,15 @@ body{
 width: 300px;
 height: 200px;
 background: #f00;
-;
+animation: mymove 5s infinite
 
 }
+@keyframe mymove{
+ form {background-color: red;}
+ to {background-color: blue;}
 
+
+}
 input submit{
 
     background-color: #0f0;
