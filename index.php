@@ -21,9 +21,9 @@
 
         <label for="species">Välj djur</label><br>
         <select name="species" id="species">
-            <option value="cat">Katt</option>
-            <option value="dog">Hund</option>
-            <option value="bird">Fågel</option>
+            <option value="Katt">Katt</option>
+            <option value="Hund">Hund</option>
+            <option value="Fågel">Fågel</option>
         </select>
         <br>
         <input type="submit" value="submit">
@@ -43,10 +43,20 @@
 
 <?php
 require_once("animal.php");
+require_once("dog.php");
 session_start();
 
-$djur = new Animal($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
-$_SESSION['animal'][] = serialize($djur);
+if(isset($_POST["name"])){
+
+    if($_POST["species"]="dog"){
+        $djur = new Dog($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
+    }else{
+        $djur = new Animal($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
+
+    }
+    
+    $_SESSION['animal'][] = serialize($djur);
+}
 
 if (isset($_SESSION['animal'])) {
     foreach ($_SESSION['animal'] as $djurdata) {
