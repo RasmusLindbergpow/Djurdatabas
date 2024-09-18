@@ -18,7 +18,7 @@
 
         <label for="age">Ålder</label><br>
         <input type="text" id="age" name="age"></input><br>
-        
+
         <label for="species">Välj djur</label><br>
         <select name="species" id="species">
             <option value="cat">Katt</option>
