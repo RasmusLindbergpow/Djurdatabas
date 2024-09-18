@@ -48,7 +48,7 @@ session_start();
 
 if(isset($_POST["name"])){
 
-    if($_POST["species"]="dog"){
+    if($_POST["species"]=="Hund"){
         $djur = new Dog($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
     }else{
         $djur = new Animal($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
