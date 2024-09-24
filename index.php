@@ -28,7 +28,7 @@
             <option value="Fågel">Fågel</option>
         </select>
         <br>
-        <input type="submit" value="submit">
+        <input type="submit" id="submit" value="submit">
 
     </form>
 
