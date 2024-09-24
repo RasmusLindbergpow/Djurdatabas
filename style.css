@@ -5,20 +5,20 @@
 body{
 width: 300px;
 height: 200px;
-background: #0ff;
+background: #0ff; /* sätter backrunden en viss färg */
 
 
 }
 
 
 #logout{
-background-color: rgb(255, 0, 8);
+background-color: rgb(255, 0, 8); /* sätter logout button som röd färg */
 
 
 }
 
 #submit{
-background-color: #0f0;
+background-color: #0f0;   /* gör knppaen submit grön */
 
 
 }
