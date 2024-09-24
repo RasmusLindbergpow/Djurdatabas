@@ -1,9 +1,9 @@
 <?php
-session_start();
+session_start();  /* Startar en session.*/
 
 
-session_destroy();
-header("Location: index.php");
+session_destroy();   /* förstör alla session data- (loggar ut användaren)*/
+header("Location: index.php"); /* omleder användaren till index.php sidan*/
 
-exit();
+exit(); /*stoppar ytterligare körning av skriptet*/
 ?>
