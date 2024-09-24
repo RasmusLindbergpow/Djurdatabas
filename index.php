@@ -12,8 +12,8 @@
 
     <form action="index.php" method="post">
 
-        <label for="name">Djurets namn</label is set><br>
-        <input type="text" id="name" name="name"></input if set><br>
+        <label for="name">Djurets namn</label><br>
+        <input type="text" id="name" name="name"></input><br>
 
         <label for="sound">Ljud</label><br>
         <input type="text" id="sound" name="sound"></input><br>
