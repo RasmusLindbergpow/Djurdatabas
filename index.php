@@ -50,17 +50,20 @@ require_once("cat.php");
 session_start();
 
 if(isset($_POST["name"])){
+    if($_POST["species"] !== "" && $_POST["name"] !== "" && $_POST["sound"] !== "" && $_POST["age"] !== "") {
+        if($_POST["species"] == "Hund") {
+            $djur = new Dog($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
+        } elseif($_POST["species"]=="Katt") {
+            $djur = new Cat($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
+        } else {
+            $djur = new Animal($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
 
-    if($_POST["species"]=="Hund"){
-        $djur = new Dog($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
-    }elseif($_POST["species"]=="Katt"){
-        $djur = new Cat($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
-    }else{
-        $djur = new Animal($_POST['name'], $_POST['sound'], $_POST['age'], $_POST['species']);
-
+        }
+        
+        $_SESSION['animal'][] = serialize($djur);
+    } else {
+        echo "<p>Du måste skriva i alla rutorna</p>";
     }
-    
-    $_SESSION['animal'][] = serialize($djur);
 }
 
 if (isset($_SESSION['animal'])) {
