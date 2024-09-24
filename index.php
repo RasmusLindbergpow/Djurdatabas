@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Djur</title>   
-    <link rel="stylesheet" href="style.css"> 
+    <title>Djur</title>   <!--- sätter titlen till djur-->
+    <link rel="stylesheet" href="style.css"> <!-- synkar css med html-->
 </head>
 
 <body>
 
     <form action="index.php" method="post">
 
-        <label for="name">Djurets namn</label><br>
-        <input type="text" id="name" name="name"></input><br>
+        <label for="name">Djurets namn</label><br> 
+        <input type="text" id="name" name="name"></input><br> <!-- skriver formel med namn ljud, åldet och villken art-->
 
         <label for="sound">Ljud</label><br>
         <input type="text" id="sound" name="sound"></input><br>
@@ -28,7 +28,7 @@
             <option value="Fågel">Fågel</option>
         </select>
         <br>
-        <input type="submit" id="submit" value="submit">
+        <input type="submit" id="submit" value="submit"> <!-- gör en knapp till formlen -->
 
     </form>
 
@@ -44,7 +44,7 @@
 
 
 <?php
-require_once("animal.php");
+require_once("animal.php"); 
 require_once("dog.php");
 require_once("cat.php");
 session_start();
